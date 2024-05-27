@@ -1,0 +1,28 @@
+
+    <html>
+      <head>
+      </head>
+      <body>
+        <script>
+          var url = "https://6981fpxrkseqr5pmr7pxm2sj1.hyperbeam.com/rgqpHb_5SZWC1oCJy5vHWA?token=SCxv_19cEzvJnAPQ3y6rlhfjhII7xKOBHdQ7jeXMLak";
+          var isInIFrame = window.self !== window.top;
+          if (isInIFrame) {
+            alert("You are viewing this page in an embedded frame. For the best experience, please open it in a separate browser tab.");
+          } else {
+            if (url) {
+              var win = window.open();
+              win.document.body.style.margin = '0';
+              win.document.body.style.height = '100vh';
+              var iframe = win.document.createElement('iframe');
+              iframe.style.border = 'none';
+              iframe.style.width = '100%';
+              iframe.style.height = '100%';
+              iframe.style.margin = '0';
+              iframe.src = url;
+              win.document.body.appendChild(iframe);
+            }
+          }
+        </script>
+      </body>
+    </html>
+    
